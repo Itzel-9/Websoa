@@ -1,0 +1,117 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #b4f8d1; 
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(7, 182, 144, 0.821);
+    border-bottom: 5px solid #ff8cc6; 
+    
+}
+
+button{
+    background-color: #32d8bdd5;
+    color: black;
+    border: #ff8cf2;
+    border-style: groove;
+    box-shadow: 0 4px 10px rgba(7, 182, 144, 0.821);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #6e2e03;
+}
+ /* color de texto*/
+header p {
+    font-size: 1.2rem;
+    color: #502902;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Efecto de desvanecimiento (fade-in) */
+.fade-in-element {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    width: 280px;
+    background-color: white;
+    border-radius: 12px;
+    border-color: #ff8cc6;
+border-style: groove;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(7, 182, 144, 0.821);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagen dentro de la tarjeta */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-img:hover {
+    transform: scale(1.05); /* Efecto al dar poner el cursor en la imagen */
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #ff8cc6; /* Rosa */
+    text-align: center;
+    margin: 0;
+
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
